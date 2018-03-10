@@ -1,3 +1,11 @@
+
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+
+
 .menu1{
     background: #4e4e4e;
     height: 55px;
@@ -7,6 +15,7 @@
     z-index: 2;
     border-radius: 5%;
     margin: 31px 0px 11px 141px;
+    float: left;
 
 }
 
@@ -32,5 +41,38 @@
     margin: 16px 51px 8px 19px;
     text-decoration: none;
     color: white;
+    z-index: 5;
 
+}
+
+.slider{
+    width: 100%;
+    background: url();
+    height: 70vh;
+    margin-top: 0px;
+    background-color: black;
+    overflow: hidden;
+   }
+
+.animation{
+    height: 70vh;
+    width: 300%;
+    position: relative;
+    background: url(img/patron.jpg);
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+
+/*animation*/
+
+@keyframes slider{
+    0% {left: -10%}
+    25%{left: -25%}
+    50%{left: -100%}
+    75%{left: -170%}
+    100%{left: -200%}
 }
