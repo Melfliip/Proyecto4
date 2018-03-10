@@ -1,0 +1,70 @@
+body{
+	background: url(http://cdn.bolivia.com/sdi/2017/07/03/lluvia-de-estrellas-perseidas-en-el-2017-558701.jpg);
+	background-size: cover;
+}
+
+.tierra{
+    background: url(https://www.caracteristicas.co/wp-content/uploads/2017/02/planeta-tierra-min-e1487870067631.jpg);
+    background-size: 356px;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 54%;
+    z-index: 1;
+    transition: transform 20s;
+}
+.sol{
+	background: url(http://www.curiosfera.com/wp-content/uploads/2016/08/Qu%C3%A9-es-el-sol-y-c%C3%B3mo-funciona.jpg);
+	background-size: 356px;
+	background-position: center;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    left: 35%;}
+
+  .orbita{
+  	width: 800px;
+    height: 800px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    background: none;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transition: transform 60s linear;
+
+}
+.orbita:hover{
+	transform: rotate(5000deg);
+	}
+.orbita:hover .tierra{
+	transform: rotate(360deg);
+
+}
+.orbita2{
+	width: 432px;
+    height: 432px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    background: none;
+    position: absolute;
+    top: 32%;
+    left: 28%;
+}
+.luna{
+	background: url(https://carta-natal.es/archivos/planetas/luna.jpg);
+    background-size: 356px;
+    background-position: center;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    position: absolute;
+    top: -9%;
+    left: 50%;
+    z-index: 2;
+}
