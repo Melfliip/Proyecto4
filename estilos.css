@@ -1,0 +1,72 @@
+html{
+	margin:0px;}
+
+body{
+	background: #333 ;
+}	
+
+.sistema {
+	width: 600px;
+    height: 600px;
+    position: absolute;
+    border: 0px solid #fbfbfb;
+    background: radial-gradient(#030425 20%,#010413 40%);
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+	overflow:hidden;
+}
+.orbita{
+	    border: 1px solid white;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 140px;
+    transition:transform 400s linear;
+}
+
+.orbita:hover{
+	transform: rotate(5000deg);
+}
+
+.orbita:hover .tierra{
+	transform: rotate(5000deg);
+}
+
+
+.tierra{
+    background: url("https://vignette.wikia.nocookie.net/new-fantendo/images/a/a9/Planeta_Tierra.png/revision/latest?cb=20170801184758&path-prefix=es");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 50px;
+    border-radius: 50%;
+    position: absolute;
+    transition:transform 40s linear;
+}
+
+.sol{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background:url("https://png.pngtree.com/element_origin_min_pic/16/06/18/17576512a3570ce.jpg");
+    background-size:cover;
+    border-radius: 60%;
+    top: 60%;
+    margin-top: -75px;
+    left: 50%;
+    margin-left: -75px;
+}	
+
+.sistema:hover .orbita{
+	transform:rotate(20000deg);
+}
+
+.sistema:hover .tierra{
+	transform:rotate(20000deg);
+}
+
